@@ -1,6 +1,7 @@
 # Math calculator
 
-A simple math expression evaluation written in Go
+A simple math expression evaluation written in Go (ultilize
+[rtokenizer](https://github.com/vanhtuan0409/rtokenize))
 
 ### Installation
 
@@ -13,6 +14,14 @@ go get https://github.com/vanhtuan0409/mathcalculator
 ```go
 func Evaluate(expression string) (float64, error) {}
 ```
+
+Currently only support basic math operator includes:
+
+* Add (`+`)
+* Substract (`-`)
+* Multiply (`*`)
+* Divide (`/`)
+* Bracket (`()`)
 
 ### Example
 
