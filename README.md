@@ -15,7 +15,7 @@ go get https://github.com/vanhtuan0409/mathcalculator
 func Evaluate(expression string) (float64, error) {}
 ```
 
-Currently only support basic math operator includes:
+Currently only support basic math operators include:
 
 * Add (`+`)
 * Substract (`-`)
