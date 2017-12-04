@@ -70,8 +70,10 @@ func evaluate(tokens []*rtokenizer.Token) (float64, error) {
 // Evaluate Evaluate an math expression
 func Evaluate(expression string) (float64, error) {
 	t := rtokenizer.NewTokenizer(rtokenizer.Option{
-		IgnoreSpaces:    true,
-		IgnoreLineBreak: true,
+		IgnoreSpaces:             true,
+		IgnoreLineBreak:          true,
+		UseBuiltInLineBreakToken: true,
+		UseBuiltInSpaceToken:     true,
 	})
 	t.Add(number, `[0-9]*\.?[0-9]+`)
 	t.Add(plus, `\+`)
